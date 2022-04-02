@@ -35,17 +35,17 @@ import VueI18n from "vue-i18n";
 // 添加 i8n
 Vue.use(VueI18n);
 const i18n = new VueI18n({
-    // 语言标识, 通过切换locale的值来实现语言切换,this.$i18n.locale
-    locale: 'zh-CN',
-    messages: {
-        'zh-CN': require('./common/lang/zh'),   // 中文语言包
-        'en-US': require('./common/lang/en')    // 英文语言包
-    }
+  // 语言标识, 通过切换locale的值来实现语言切换,this.$i18n.locale
+  locale: "zh-CN",
+  messages: {
+    "zh-CN": require("./common/lang/zh"), // 中文语言包
+    "en-US": require("./common/lang/en"), // 英文语言包
+  },
 });
 // configure router
 const router = new VueRouter({
-    routes, // short for routes: routes
-    linkExactActiveClass: "nav-item active",
+  routes, // short for routes: routes
+  linkExactActiveClass: "nav-item active",
 });
 
 Vue.prototype.$Chartist = Chartist;
@@ -58,11 +58,11 @@ Vue.use(Notifications);
 
 /* eslint-disable no-new */
 new Vue({
-    el: "#app",
-    i18n,
-    render: (h) => h(App),
-    router,
-    data: {
-        Chartist: Chartist,
-    },
+  el: "#app",
+  i18n,
+  render: (h) => h(App),
+  router,
+  data: {
+    Chartist: Chartist,
+  },
 });

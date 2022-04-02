@@ -6,9 +6,9 @@
       </div>
       <div class="md-toolbar-section-end">
         <md-button
-            class="md-just-icon md-simple md-toolbar-toggle"
-            :class="{ toggled: $sidebar.showSidebar }"
-            @click="toggleSidebar"
+          class="md-just-icon md-simple md-toolbar-toggle"
+          :class="{ toggled: $sidebar.showSidebar }"
+          @click="toggleSidebar"
         >
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -18,9 +18,9 @@
         <div class="md-collapse">
           <div class="md-autocomplete">
             <md-autocomplete
-                class="search"
-                v-model="selectedEmployee"
-                :md-options="employees"
+              class="search"
+              v-model="selectedEmployee"
+              :md-options="employees"
             >
               <label>Search...</label>
             </md-autocomplete>
@@ -28,14 +28,14 @@
           <md-list>
             <li class="md-list-item">
               <a
-                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
+                class="md-list-item-router md-list-item-container md-button-clean dropdown"
               >
                 <div class="md-list-item-content">
                   <drop-down>
                     <md-button
-                        slot="title"
-                        class="md-button md-just-icon md-simple"
-                        data-toggle="dropdown"
+                      slot="title"
+                      class="md-button md-just-icon md-simple"
+                      data-toggle="dropdown"
                     >
                       <md-icon>translate</md-icon>
                       <p class="hidden-lg hidden-md">Translate</p>
@@ -54,15 +54,15 @@
             </md-list-item>
             <li class="md-list-item">
               <a
-                  href="#/notifications"
-                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
+                href="#/notifications"
+                class="md-list-item-router md-list-item-container md-button-clean dropdown"
               >
                 <div class="md-list-item-content">
                   <drop-down>
                     <md-button
-                        slot="title"
-                        class="md-button md-just-icon md-simple"
-                        data-toggle="dropdown"
+                      slot="title"
+                      class="md-button md-just-icon md-simple"
+                      data-toggle="dropdown"
                     >
                       <md-icon>notifications</md-icon>
                       <span class="notification">5</span>

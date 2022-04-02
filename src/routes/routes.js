@@ -10,64 +10,64 @@ import Notifications from "@/pages/Notifications.vue";
 import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 
 const routes = [
-    {
-        path: "/",
-        component: DashboardLayout,
-        redirect: "/dashboard",
-        children: [
-            {
-                icon: "dashboard",
-                path: "dashboard",
-                name: "routes.dashboard",
-                component: Dashboard,
-            },
-            {
-                icon: "person",
-                path: "user",
-                name: "routes.userProfile",
-                component: UserProfile,
-            },
-            {
-                icon: "content_paste",
-                path: "table",
-                name: "routes.tableList",
-                component: TableList,
-            },
-            {
-                icon: "library_books",
-                path: "typography",
-                name: "routes.typography",
-                component: Typography,
-            },
-            {
-                icon: "bubble_chart",
-                path: "icons",
-                name: "routes.icons",
-                component: Icons,
-            },
-            {
-                icon: "location_on",
-                path: "maps",
-                name: "routes.maps",
-                meta: {
-                    hideFooter: true,
-                },
-                component: Maps,
-            },
-            {
-                icon: "notifications",
-                path: "notifications",
-                name: "routes.notifications",
-                component: Notifications,
-            },
-            {
-                icon: "unarchive",
-                path: "upgrade",
-                name: "routes.upgrade",
-                component: UpgradeToPRO,
-            },
-        ],
-    },
+  {
+    path: "/",
+    component: DashboardLayout,
+    redirect: "/dashboard",
+    children: [
+      {
+        icon: "dashboard",
+        path: "dashboard",
+        name: "routes.dashboard",
+        component: Dashboard,
+      },
+      {
+        icon: "person",
+        path: "user",
+        name: "routes.userProfile",
+        component: UserProfile,
+      },
+      {
+        icon: "content_paste",
+        path: "table",
+        name: "routes.tableList",
+        component: TableList,
+      },
+      {
+        icon: "library_books",
+        path: "typography",
+        name: "routes.typography",
+        component: Typography,
+      },
+      {
+        icon: "bubble_chart",
+        path: "icons",
+        name: "routes.icons",
+        component: Icons,
+      },
+      {
+        icon: "location_on",
+        path: "maps",
+        name: "routes.maps",
+        meta: {
+          hideFooter: true,
+        },
+        component: Maps,
+      },
+      {
+        icon: "notifications",
+        path: "notifications",
+        name: "routes.notifications",
+        component: Notifications,
+      },
+      {
+        icon: "unarchive",
+        path: "upgrade",
+        name: "routes.upgrade",
+        component: UpgradeToPRO,
+      },
+    ],
+  },
 ];
 
 export default routes;
