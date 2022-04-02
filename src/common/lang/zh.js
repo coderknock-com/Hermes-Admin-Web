@@ -8,3 +8,6 @@ export const routes = {
     notifications: '通知',
     upgrade: '更新到专业版'
 };
+export const sidebar = {
+    title: '拿客'
+};

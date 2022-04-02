@@ -1,23 +1,23 @@
 <template>
   <div
-    class="sidebar"
-    :data-color="sidebarItemColor"
-    :data-image="sidebarBackgroundImage"
-    :style="sidebarStyle"
+      class="sidebar"
+      :data-color="sidebarItemColor"
+      :data-image="sidebarBackgroundImage"
+      :style="sidebarStyle"
   >
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
         <div class="logo-img">
-          <img :src="imgLogo" alt="" />
+          <img :src="imgLogo" alt=""/>
         </div>
       </a>
 
       <a
-        href="https://www.creative-tim.com/product/vue-material-dashboard"
-        target="_blank"
-        class="simple-text logo-normal"
+          href="https://www.coderknock.com"
+          target="_blank"
+          class="simple-text logo-normal"
       >
-        {{ title }}
+        {{ $t(title) }}
       </a>
     </div>
     <div class="sidebar-wrapper">
@@ -26,10 +26,10 @@
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
         <slot>
           <sidebar-link
-            v-for="(link, index) in sidebarLinks"
-            :key="link.name + index"
-            :to="link.path"
-            :link="link"
+              v-for="(link, index) in sidebarLinks"
+              :key="link.name + index"
+              :to="link.path"
+              :link="link"
           >
           </sidebar-link>
         </slot>
@@ -47,7 +47,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Vue MD",
+      default: "sidebar.title",
     },
     sidebarBackgroundImage: {
       type: String,
@@ -55,7 +55,7 @@ export default {
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png"),
+      default: require("@/assets/img/coderknock.png"),
     },
     sidebarItemColor: {
       type: String,

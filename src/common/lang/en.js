@@ -8,3 +8,7 @@ export const routes = {
     notifications: 'Notifications',
     upgrade: 'Upgrade to PRO'
 };
+export const sidebar = {
+    title: 'coderknock'
+};
+
